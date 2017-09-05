@@ -1,0 +1,199 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="d.wangyi.song.wnagyi_demo.RighttFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center_horizontal"
+            android:background="#000"
+            >
+            <LinearLayout
+                android:focusable="true"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                android:layout_width="80dp"
+                android:gravity="center"
+                android:layout_height="0dp"
+
+                >
+                <ImageView
+                    android:padding="5dp"
+                    android:layout_width="80dp"
+                    android:layout_height="65dp"
+                    android:id="@+id/user_right"
+                    android:src="@drawable/user"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="立即登录"
+                    android:textColor="#fff"
+                    android:focusable="false"
+                    android:id="@+id/username"
+                    />
+                <TextView
+                    android:padding="5dp"
+                    android:textSize="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="赢积分 抢大礼!"
+                    android:textColor="#3f3"
+                    android:focusable="false"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <RadioGroup
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    >
+                    <RadioButton
+                        android:text="1"
+                        android:background="@drawable/yuedu"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:button="@null"
+                        android:layout_height="50dp" />
+                    <RadioButton
+                        android:text="0"
+                        android:button="@null"
+                        android:background="@drawable/yuedu"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp" />
+                    <RadioButton
+                        android:text="0"
+                        android:button="@null"
+                        android:background="@drawable/yuedu"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_weight="4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/linear1"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="30dp">
+                <TextView
+                    android:text="俱乐部"
+                    android:textStyle="bold"
+                    android:focusable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="飞人博尔特告别战!来猜成绩"
+                    android:layout_width="wrap_content"
+                    android:focusable="false"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/linear2"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="30dp">
+                <TextView
+                    android:text="活   动"
+                    android:textStyle="bold"
+                    android:focusable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="大人,这是你的SSR么?"
+                    android:layout_width="wrap_content"
+                    android:focusable="false"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/linear3"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="30dp">
+                <TextView
+                    android:text="应   用"
+                    android:textStyle="bold"
+                    android:focusable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="挖掘机技术哪家强?蓝翔蓝翔搞蓝翔"
+                    android:layout_width="wrap_content"
+                    android:focusable="false"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/linear4"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="30dp">
+                <TextView
+                    android:text="游   戏"
+                    android:textStyle="bold"
+                    android:focusable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="来一个freestyle ! gai爷陪你嗨到底"
+                    android:layout_width="wrap_content"
+                    android:focusable="false"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <android.support.design.widget.TabLayout
+                android:id="@+id/right_bot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <android.support.v4.view.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/viewpager_bot"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>
